@@ -1,0 +1,14 @@
+Package: SuperMPLE
+Type: Package
+Title: MPLE for PoSt-hard core processes
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: This package computes a maximum pseudo-likelihood estimator for a point pattern which is assumed to stem from the superposition of a Strauss process with hard core and a homogeneous Poisson process.
+License: GPL (3.0)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.5), spatstat, igraph, rje
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-06-11 11:20:36 UTC; jwieditz
