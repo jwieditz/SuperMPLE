@@ -353,7 +353,7 @@ logPseudoLikelihood  <- function( theta, graphStructure, integralGridStructure, 
 #' }
 #'
 #' \dontrun{
-#' data("ExampleFingerprint2")
+#' data("ExampleFingerprint")
 #' gridSizeX <- gridSizeY <- 25
 #' theta_init    <- c( beta = log(1), gamma = log(.4), lambda = log(1E-4) )
 #' MPLE          <- SuperMPLE(pointPattern, interactionRadius, hardCoreRadius, trend, gridSizeX, gridSizeY, theta_init, FALSE)
