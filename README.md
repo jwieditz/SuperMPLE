@@ -2,7 +2,7 @@
 
 This project includes an R package containing an algorithm to compute an maximum pseudo-likelihood estimator for the superposition of a Strauss process (possibly with hard core) and a Poisson process. 
 
-This repository is supplementary to Wieditz, J., Pokern, Y., Schuhmacher, D., Huckemann, S. (2021+). Separating Point Patterns for Fingerprints. Submitted to GSI 2021.
+This repository is supplementary to Wieditz, J. (2021). Characteristic and necessary minutiae in fingerprints. Dissertation.
 
 # The SuperMPLE package
 
