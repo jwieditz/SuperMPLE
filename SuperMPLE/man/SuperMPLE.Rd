@@ -37,6 +37,7 @@ A list of containing the pre-computed graph structures of the point pattern and 
 Computes a maximum pseudo-likelihood estimator for the passed point pattern in the PoSt-hard core model.
 }
 \examples{
+
 \donttest{
 interactionRadius <- 0.1
 hardCoreRadius    <- 0.03
@@ -51,6 +52,13 @@ MPLE          <- SuperMPLE(pointPattern, interactionRadius, hardCoreRadius, tren
 MPLE
 }
 
+\dontrun{
+data("ExampleFingerprint2")
+gridSizeX <- gridSizeY <- 25
+theta_init    <- c( beta = log(1), gamma = log(.4), lambda = log(1E-4) )
+MPLE          <- SuperMPLE(pointPattern, interactionRadius, hardCoreRadius, trend, gridSizeX, gridSizeY, theta_init, FALSE)
+MPLE
+}
 
 }
 \author{

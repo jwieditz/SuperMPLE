@@ -11,4 +11,5 @@ LazyData: true
 Depends: R (>= 4.0.5), spatstat, igraph, rje
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2021-04-13 15:35:47 UTC; jwieditz
+Packaged: 2021-06-11 11:20:36 UTC; jwieditz
+
