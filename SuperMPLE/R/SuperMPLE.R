@@ -16,6 +16,7 @@ compute_graphStructure <- function( pointPattern, interactionRadius, hardCoreRad
   graphStructure    <- list()
 
   message('Computing graph structure of the point pattern')
+
   pb = txtProgressBar(min = 0, max = pointPattern$n, initial = 0)
   for( i in 1:pointPattern$n ){
 
@@ -94,7 +95,9 @@ compute_graphStructure <- function( pointPattern, interactionRadius, hardCoreRad
             if( isHomogeneous ){
               trendProduct <- c( trendProduct, 1)
             } else {
+
               trendProduct <- c( trendProduct, prod(trend[coords(subset(zetaWithoutZ, indices[j]))]))
+
             }
           }
         }
@@ -115,17 +118,19 @@ compute_graphStructure <- function( pointPattern, interactionRadius, hardCoreRad
 
   for( i in 1:(integralGridPattern$n) ){
 
+
     setTxtProgressBar(pb, i)
 
     u               <- integralGridPattern[i]
     isInWindow      <- inside.owin(u$x, u$y, Window(pointPattern))
+
     hasNeighbours   <- FALSE
     informationList <- list()
 
     zetaPlusU       <- superimpose(pointPattern, integralGridPattern[i])
     distance        <- pairdist(zetaPlusU)
     noOfNeighbours  <- 0
-
+    
     if( isInWindow ){
 
       # If u does not interact with any point of the point pattern, the conditional intensity equals the intensity. Hence, no further computations are needed and the following procedure is skipped.
@@ -314,6 +319,7 @@ logPseudoLikelihood  <- function( theta, graphStructure, integralGridStructure, 
     }
   }
   normalisationConstant   <- normalisationConstant / pointsInWindow * windowVolume
+
   return( - PL + normalisationConstant )
 }
 
@@ -332,7 +338,6 @@ logPseudoLikelihood  <- function( theta, graphStructure, integralGridStructure, 
 #' @export
 #'
 #' @examples
-#'
 #' \donttest{
 #' interactionRadius <- 0.1
 #' hardCoreRadius    <- 0.03
@@ -377,6 +382,7 @@ SuperMPLE <- function( pointPattern, interactionRadius, hardCoreRadius, trend, g
 
   message('Searching local maximum of the pseudo-likelihood...')
   # Computes the MPLE in the natural parameter space
+
   MPLE <- optim( par = theta_init,
                  logPseudoLikelihood,
                  graphStructure = graphStructure,

@@ -20,8 +20,6 @@ To use the SuperMPLE R-package follow the steps below:
 
 4. Moreover, the documentation of the SuperMPLE function contains an example for the superposition of an inhomogeneous Strauss- hard core process and a homogeneous Poisson process from applications in fingerprint recognition.
 
-
-
 # Example
 
 | <img width = 1000 src="https://github.com/jwieditz/SuperMPLE/blob/main/mple-example-pattern.png" /> | <img width = 1000 src="https://github.com/jwieditz/SuperMPLE/blob/main/mple-example-pl.png" /> |
