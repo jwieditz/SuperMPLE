@@ -2,7 +2,7 @@
 
 This project includes an R package containing an algorithm to compute an maximum pseudo-likelihood estimator for the superposition of a Strauss process (possibly with hard core) and a Poisson process. 
 
-This repository is supplementary to Wieditz, J., Pokern, Y., Schuhmacher, D., Huckemann, S. (2021+). Maximum pseudo-likelihood estimation for superpositions of Strauss-hard core and Poisson processes. Manuscript not yet submitted.
+This repository is supplementary to Wieditz, J. (2021+). Characteristic and necessary minutiae in fingerprints. Dissertation.
 
 # The SuperMPLE package
 
